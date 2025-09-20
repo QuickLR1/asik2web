@@ -1,0 +1,100 @@
+/* Основной стиль */
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+/* Заголовки */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  color: gold;
+  background-color: darkgray;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+}
+
+h2 {
+  color: gold;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Навигация */
+header {
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  background-color: darkblue;
+  text-align: center;
+  padding: 12px 0;
+}
+
+nav a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: gold;
+}
+
+/* Секция формы */
+.form-section {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: darkblue;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Поля ввода */
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid gold;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
+
+input:focus, textarea:focus {
+  border-color: white;
+  outline: none;
+}
+
+
+.button-style {
+  background-color: rgb(132, 0, 255);
+  color: rgb(8, 22, 79);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-style:hover {
+  background-color: white;
+  color: rgb(5, 5, 87);
+}
+/* Футер */
+footer {
+  background-color: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
