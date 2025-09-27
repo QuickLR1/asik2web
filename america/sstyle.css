@@ -1,0 +1,84 @@
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0127fe;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-family: 'Arial', sans-serif;
+  font-size: 28px;
+  color: gold;
+  font-weight: bold;
+}
+
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: gold;
+}
+
+
+.form-section {
+  width: 50%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgb(37, 70, 128);
+  border-radius: 5px;
+  text-align: center;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid gold;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
+
+input:focus, textarea:focus {
+  border-color: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(1,39,254,0.12);
+}
+
+.button-style {
+  background-color: rgb(132, 0, 255);
+  color: rgb(8, 22, 79);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-style:hover {
+  background-color: white;
+  color: rgb(5, 5, 87);
+}
+
+
