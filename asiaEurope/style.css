@@ -1,0 +1,136 @@
+
+
+
+p {
+  font-size: 16px;;
+  color: white;
+}
+
+h1 {
+  color:gold;
+  text-align: center;
+  font-size: 45px;
+}
+
+
+
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: black;
+}
+.header {
+  text-align: center;;
+  margin: 0;
+}
+
+
+nav {
+  width: 100%;
+  background-color: darkblue;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  padding: 0
+}
+h2 {
+  flex-basis: 30%;
+  color: gold;
+  padding: 0;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin:0
+}
+
+nav ul li {
+  align-self: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: gold;
+}
+
+#intro {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: darkblue;
+
+}
+section {
+  margin: 20px auto;
+}
+
+div.cards {
+  display: flex;
+  justify-content: space-around;
+}
+section.country {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+
+section.country:hover{
+  scale: 1.01;
+}
+
+
+
+img.country {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  outline-style: double;
+  outline-color: white;
+}
+/* Футер */
+footer {
+  background-color: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0px;
+  grid-column: 1 / span 2;
+}
+
+
+#grid  {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0;
+  margin: 0px;
+}
+
+.sidebar {
+  background-color: darkred;
+  border: double;
+  border-width: 7px;
+  border-color: gold;
+  text-align: center;
+  font-size: 35px;
+}
+
+header {
+  grid-column: 1 / span 2;
+  margin:0;
+  padding: 0;
+}
+
+h6 {
+  color:gold;
+
+}
+

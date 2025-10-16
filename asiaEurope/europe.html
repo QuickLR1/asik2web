@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    nav {
+      background-color: darkcyan;
+    }
+    section {
+      background-color: darkcyan;
+    }
+    .sidebar {
+      background-color: darkcyan;
+    }
+  </style>
+</head>
+<body id="grid">
+  <header>
+     <nav>
+      <ul>
+        <li><h2>Europe</h2></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="asia.html">Asia</a></li>
+        <li><a href="europe.html">Europe</a></li>
+        <li><a href="../america/america.html">America</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="sidebar">
+    <a href="../america/contact.html"> Contact us </a>
+    <p id="time"></p>
+    <script>
+      function setTime(){
+        const date = new Date();
+        const day = date.toLocaleDateString();
+        const time = date.toLocaleTimeString();
+        document.getElementById('time').textContent = day + ' ' + time;
+      }
+      setInterval(setTime, 1000)
+      setTime();
+    </script>
+    <h6 style="margin-bottom: 20px"> Background color</h6>
+    <button onclick="whiteBG()">White</button>
+    <button onclick="blackBG()">Black</button>
+    <script>
+      const whiteBG = () => document.body.style.backgroundColor = "white";
+      const blackBG = () => document.body.style.backgroundColor = "black";
+    </script>
+
+  </div>
+  <main>
+    <div class="cards">
+      <section class = "country">
+        <h1> France </h1>
+          <img src = "france.jpg" class="country">
+          <p>
+            France is a dream destination offering a perfect blend of culture, history, and natural beauty. 
+            From the romantic allure of Paris and the glamour of the French Riviera to the fairytale castles of 
+            the Loire Valley and the vineyards of Bordeaux, France delights every traveler. With world-renowned cuisine, 
+            art, and landscapes, it’s a country that promises unforgettable experiences.
+
+          </p>
+      </section>
+
+      <section class = "country">
+        <h1> Germany </h1>
+          <img src = "germany.jpeg" class="country">
+          <p>
+            Germany is a country where rich history meets modern innovation, offering travelers a mix of vibrant cities and scenic landscapes. 
+            Explore Berlin’s culture and nightlife, Munich’s Bavarian charm, and the fairytale castles along the Rhine. From the Black Forest to the Alps, 
+            Germany’s natural beauty pairs perfectly with its world-class beer, hearty cuisine, and welcoming traditions.
+
+          </p>
+      </section>
+
+      <section class = "country">
+        <h1> Italy </h1>
+          <img src = "italy.jpg" class="country">
+          <p>
+            Italy is a top travel destination known for its timeless history, world-class art, and delicious cuisine. 
+            Visitors can explore ancient ruins in Rome, glide through Venice’s canals, admire Renaissance masterpieces in Florence, 
+            and relax along the stunning Amalfi Coast. From the rolling vineyards of Tuscany to the dramatic peaks of the Dolomites, 
+            Italy combines culture, beauty, and charm at every turn.
+
+          </p>
+      </section>
+    </div>
+
+  </main>
+  <footer>
+    <p>Team FC Ertis | Members: Bexultan, Adil, Tamerlan | Group SE-2402</p>
+  </footer>
+</body>
+</html>

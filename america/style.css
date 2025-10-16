@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p { 
+  font-size: 16px;
+  color: white;
+}
+
+header h1 { margin: 0; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+a { color: white; text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+section.country {
+  flex: 1 1 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background: rgb(248, 76, 76);
+}
+
+section.country img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.accordion {
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.panel {
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  section.country { flex: 1 1 45%; background: #435bf9; }
+  p { font-size: 15px; }
+  header h1 { font-size: 22px; }
+}
+
+@media (max-width: 600px) {
+  main { flex-direction: column; }
+  section.country { flex: 1 1 100%; background: #ff5858; }
+  header { flex-direction: column; text-align: center; }
+  nav ul { flex-direction: column; align-items: center; gap: 10px; }
+  p { font-size: 14px; }
+  header h1 { font-size: 20px; }
+}
